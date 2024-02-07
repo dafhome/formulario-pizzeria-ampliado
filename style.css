@@ -67,14 +67,26 @@ form {
 
 @media screen and (width<1000px){
     form{
-        width: 100%;
+        width: 150%;
+        flex-direction: column;
+        margin-top: 40vh;
     }
     .logo{
         display: none;
     }
-    .form{
-        flex-direction: column;
-        margin-top: 200px;
+
+    body{
+        height: 180vh;
+        margin: 0;
+
+
+    }
+
+    .container{
+        justify-content: center;
+        width: 75vw;
+        padding: 10%;
+        margin: 1%;
     }
 }
 
