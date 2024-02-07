@@ -1,20 +1,16 @@
-TIENDA CON OPCIONES DE COMPRA
+Ampliar el formulario anterior (*), o bien crear uno nuevo, que contenga al menos dos partes, y probar a delimitar zonas con <fieldset>, al que puedes darle un nombre mediante <legend>.
 
-Crea una página de pedidos para una tienda, con diferentes opciones de compra,como por ejemplo, un pizzería, que incluya menús desplegables, y casillas seleccionables cuadradas y redondas:
+(*) en este caso, guardar una copia del anterior para entregar
 
-Desplegable:  Sr/Sra./Otre (+nombre)
-Teléfono -required
+Probar otros tipos de inputs como password y tel, y atributos como checked, y otros.
 
-Desplegable sabor pizza (al menos 6)
+Que sea responsive para pantallas verticales.
 
-Checkboxes: ingredientes extras (poner al menos 4)
+Que se envíe a tu email, mediante una api como formsubmit.co . Luego puedes substituir tu email en el código por la numeración que te dan.
 
-Radio button: enviar a casa / venir a buscar
+Cuando todo te funcione, prueba a mejorar la distribución, colores, poner imágenes, etc.
 
-Puedes añadir un comentario para el cliente (textarea)
+No olvides poner NAMES para que te llegue la información!
 
-Verificar que se envíe por GET y queden registrados los datos por pares clave-valor
+Trabajo individual, pero se comparten éxitos y frustraciones en grupos pequeños.
 
-Una vez te funcione, prueba las diferentes opciones para estilizar tu formulario: colores, sombras, bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web para inspirarte!
-
-http://127.0.0.1:5500/recibido.html?gender=Mx&name=David+Alvarez&tel=662122832&antipasti-1=Stracciatella&antipasti-2=Queso&antipasti-3=Aguacate&pizza=P01&ing-1=Pecorino&ing-2=Huevo&ing-6=Butifarra&comment=Gracias

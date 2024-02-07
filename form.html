@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&family=Protest+Riot&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="body">
@@ -23,100 +23,124 @@
 
 
     <section class="container">
-        <form class="form" action="recibido.html" class="formulario" method="get">
-            
-            
-            <article class="nombre">
-                <label class="label1" id="gender" for="gender" style="display:none">gender</label>
-                <label class="label1" for="name">Nombre</label>
 
-                
-                <select name="gender" id="gender">
-                    <option value="Mx">Mx.</option>
-                    <option value="Ms">Ms.</option>
-                    <option value="Mr">Mr.</option>
+        <!-- https://app.getform.io/forms/76495 -->
+
+        <form class="form" action="https://getform.io/f/ccc906b6-045b-417c-a3db-ed5bb30842ea" class="formulario" method="POST">
+            
+            
+            <fieldset class="fieldset1">
+
+                <legend>Datos Personales</legend>
+                <article class="nombre">
+                    <label class="label1" id="gender" for="gender" style="display:none">gender</label>
+                    <label class="label1" for="name">Nombre</label>
+
+
+                    <select name="gender" id="gender">
+                        <option value="Mx">Mx.</option>
+                        <option value="Ms">Ms.</option>
+                        <option value="Mr">Mr.</option>
+                    </select>
+
+                    <input type="text" id="name" name="name" placeholder="Indicanos tu nombre y apellidos">
+                </article>
+
+                <label class="label1" for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="tel" pattern="[0-9]{9}" placeholder="¿Cual es tu teléfono?" required>
+
+               
+                <label class="label1" for="mail">email</label>
+                <input type="email" id="mail" name="mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Escribe tu correo electrónico">
+
+                <label class="label1" for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+
+                <div class="centrar-logo">
+                    <img src="/images/logo.png" class="logo" alt="">
+
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fieldset2">
+                <legend>¿Que te apetece comer hoy?</legend>
+                <label class="label1" for="antipasti">Antipasti</label>
+                <select name="antipasti" id="antipasti">
+                    <option value="A01">Stracciatella de burrata, tomatitos confitados, albahaca</option>
+                    <option value="A02">Queso Tomino del Boscaiolo fundido al horno, pane Carasao</option>
+                    <option value="A03">Aguacate roto, cilantro, cebolla roja, pane Lingua di Suocera</option>
                 </select>
 
-                <input type="text" id="name" name="name" placeholder="Indicanos tu nombre y apellidos">
-            </article>
-
-            <label class="label1" for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="tel" pattern="[0-9]{9}" placeholder="¿Cual es tu teléfono?" required>
 
 
-            <label class="label1" for="antipasti">¿Que antipasti te apetece?</label>
-            <select name="antipasti" id="antipasti">
-                <option value="A01">Stracciatella de burrata, tomatitos confitados, albahaca</option>
-                <option value="A02">Queso Tomino del Boscaiolo fundido al horno, pane Carasao</option>
-                <option value="A03">Aguacate roto, cilantro, cebolla roja, pane Lingua di Suocera</option>
-            </select>
+                <label class="label1" for="pizza">Elige la pizza que más te guste</label>
+                <select name="pizza" id="pizza">
+                    <option value="P01">Marinara: tomate, orégano, ajo laminado</option>
+                    <option value="P02">Marinara con anchoas no00, 6 ud.</option>
+                    <option value="P03">Margherita: mozzarella, tomate, albahaca</option>
+                    <option value="P04">Stracciatella, tomate, orégano fresco</option>
+                    <option value="P05">Sobrasada picante de Mallorca, taleggio, tomillo</option>
+                    <option value="P06">Butifarra, huevo, pimiento verde, fontina, cebolla roja</option>
+                    <option value="P07">Tomates confitados, pesto, parmesano, tomillo</option>
+                    <option value="P08">Pepperoni, tomate, hinojo</option>
+                    <option value="P09">Gorgonzola, taleggio, pecorino, chalotas, salvia</option>
+                    <option value="P10">Trufa negra, fontina, huevo, parmesano</option>
+                    <option value="P11">Cheddar, kale, espárragos, puerro, estragón, parmesano</option>
+                    <option value="P12">Bacon, taleggio, espinacas, huevo, pecorino</option>
+                    <option value="P13">Prosciutto cotto alla griglia, champiñones, scamorza, parmesano</option>
+                </select>
+
+                <label class="label1">¿Te apetece añadirle algo más?</label>
+                <article class="extra">
+                    <div class="extra-ing">
+                        <input type="checkbox" id="ing-1" name="Pecorino" value="si">
+                        <label class="opcion" for="ing-1">Pecorino</label>
+                    </div>
+                    <div class="extra-ing">
+                        <input type="checkbox" id="ing-2" name="Huevo" value="si">
+                        <label class="opcion" for="ing-2">Huevo</label>
+                    </div>
+                    <div class="extra-ing">
+                        <input type="checkbox" id="ing-3" name="Pepperoni" value="si">
+                        <label class="opcion" for="ing-3">Pepperoni</label>
+                    </div>
+                    <div class="extra-ing">
+                        <input type="checkbox" id="ing-4" name="Trufa" value="si">
+                        <label class="opcion" for="ing-4">Trufa Negra</label>
+                    </div>
+                    <div class="extra-ing">
+                        <input type="checkbox" id="ing-5" name="Espinacas" value="si">
+                        <label class="opcion" for="ing-5">Espinacas</label>
+                    </div>
+                    <div class="extra-ing">
+                        <input type="checkbox" id="ing-6" name="Butifarra" value="si">
+                        <label class="opcion" for="ing-6">Butifarra</label>
+                    </div>
+                </article>
+                <label class="label1" for="comment" style="display:none">¿Tienes alguna indicación extra?</label>
+                <textarea name="comment" id="comment" cols="30" rows="5"
+                    placeholder="¿Tienes alguna indicación extra?"></textarea>
 
 
 
-            <label class="label1" for="pizza">Elige la pizza que más te guste</label>
-            <select name="pizza" id="pizza">
-                <option value="P01">Marinara: tomate, orégano, ajo laminado</option>
-                <option value="P02">Marinara con anchoas no00, 6 ud.</option>
-                <option value="P03">Margherita: mozzarella, tomate, albahaca</option>
-                <option value="P04">Stracciatella, tomate, orégano fresco</option>
-                <option value="P05">Sobrasada picante de Mallorca, taleggio, tomillo</option>
-                <option value="P06">Butifarra, huevo, pimiento verde, fontina, cebolla roja</option>
-                <option value="P07">Tomates confitados, pesto, parmesano, tomillo</option>
-                <option value="P08">Pepperoni, tomate, hinojo</option>
-                <option value="P09">Gorgonzola, taleggio, pecorino, chalotas, salvia</option>
-                <option value="P10">Trufa negra, fontina, huevo, parmesano</option>
-                <option value="P11">Cheddar, kale, espárragos, puerro, estragón, parmesano</option>
-                <option value="P12">Bacon, taleggio, espinacas, huevo, pecorino</option>
-                <option value="P13">Prosciutto cotto alla griglia, champiñones, scamorza, parmesano</option>
-            </select>
-
-            <label class="label1">¿Te apetece añadirle algo más?</label>
-            <article class="extra">
-                <div class="extra-ing">
-                    <input type="checkbox" id="ing-1" name="Pecorino" value="si">
-                    <label class="opcion" for="ing-1">Pecorino</label>
+                <div class="radio-container">
+                    <input type="time" id="time" name="time" value="10:00" max="23:00">
+                    <div class="radio1">
+                        <input type="radio" id="recoger" name="envio" value="recoger">
+                        <label class="opcion2" for="recoger">Recoger</label>
+                    </div>
+                    <div class="radio1">
+                        <input type="radio" id="envio" name="envio" value="envio">
+                        <label class="opcion2" for="envio">Enviar</label>
+                    </div>
                 </div>
-                <div class="extra-ing">
-                    <input type="checkbox" id="ing-2" name="Huevo" value="si">
-                    <label class="opcion" for="ing-2">Huevo</label>
+                <div class="enviar">
+                    <button>🍕 Hacer mi pedido 🍕</button>
                 </div>
-                <div class="extra-ing">
-                    <input type="checkbox" id="ing-3" name="Pepperoni" value="si">
-                    <label class="opcion" for="ing-3">Pepperoni</label>
-                </div>
-                <div class="extra-ing">
-                    <input type="checkbox" id="ing-4" name="Trufa" value="si">
-                    <label class="opcion" for="ing-4">Trufa Negra</label>
-                </div>
-                <div class="extra-ing">
-                    <input type="checkbox" id="ing-5" name="Espinacas" value="si">
-                    <label class="opcion" for="ing-5">Espinacas</label>
-                </div>
-                <div class="extra-ing">
-                    <input type="checkbox" id="ing-6" name="Butifarra" value="si">
-                    <label class="opcion" for="ing-6">Butifarra</label>
-                </div>
-            </article>
-            <label class="label1" for="comment" style="display:none">¿Tienes alguna indicación extra?</label>
-            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="¿Tienes alguna indicación extra?"></textarea>
+            </fieldset>
 
             
-
-            <div class="radio-container">
-                <input type="time" id="time" name="time" value="10:00" max="23:00">
-                <div class="radio1">
-                    <input type="radio" id="recoger" name="envio" value="recoger">
-                    <label class="opcion2" for="recoger">Recoger</label>
-                </div>
-                <div class="radio1">
-                    <input type="radio" id="envio" name="envio" value="envio">
-                    <label class="opcion2" for="envio">Enviar</label>
-                </div>
-            </div>
-
-            <div class="enviar">
-                <button>🍕 Hacer mi pedido 🍕</button>
-            </div>
         </form>
 
 

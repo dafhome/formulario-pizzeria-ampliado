@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
     height: 80vh;
     /* background-color: rgba(184, 184, 184, 0.304); */
@@ -9,7 +9,17 @@
     border-radius: 15px;
 }
 
-h1{
+.logo{
+    width: 230px;
+}
+
+.centrar-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
     padding: 30px;
     position: sticky;
     text-align: center;
@@ -18,38 +28,66 @@ h1{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 60px;
 }
-h3{
+
+h3 {
     font-size: 200px;
     text-align: center;
 }
-body{
+
+body {
     padding: 10px;
-    background-color: rgb(184, 184, 184) ;
+    background-color: rgb(184, 184, 184);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
-.body{
+
+.body {
     background-image: url(/images/pizza-horizontal1.jpg);
 }
-.body2{
+
+.body2 {
     background-image: url(/images/contacto.jpeg);
 
 }
-form{
+
+form {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    width: 40%;
+    width: 85%;
     background-color: rgba(0, 128, 0, 0.51);
     margin-right: 50px;
     padding: 50px;
     border-radius: 5px;
 }
 
-.extra
-{
+@media screen and (width<1000px){
+    form{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .form{
+        flex-direction: column;
+        margin-top: 200px;
+    }
+}
+
+.fieldset1,.fieldset2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding-top: 15px;   
+    padding: 20px;     
+}
+
+.extra {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -57,29 +95,34 @@ form{
     gap: 15px;
     /* position: relative; */
 }
-.extra-ing{
+
+.extra-ing {
     position: relative;
 }
+
 input[type="checkbox"] {
     display: none;
     margin-right: 10px;
 }
-input[type="checkbox"] + label:before {
-	content: "";
-	width: 26px;
-	height: 26px;
-	float: left;
-	margin: 0.5em 0.5em 0 0;
-	border: 2px solid #ccc;
-	background: #fff;
-}
-input[type="checkbox"]:checked + label::before{
-	border-color: #0fbf12;
-}
-input[type="checkbox"]:checked + label::after {
+
+input[type="checkbox"]+label:before {
     content: "";
-    width:12px;
-    height:6px;
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin: 0.5em 0.5em 0 0;
+    border: 2px solid #ccc;
+    background: #fff;
+}
+
+input[type="checkbox"]:checked+label::before {
+    border-color: #0fbf12;
+}
+
+input[type="checkbox"]:checked+label::after {
+    content: "";
+    width: 12px;
+    height: 6px;
     border: 4px solid #0fbf12;
     float: left;
     margin: -2.2em;
@@ -89,86 +132,105 @@ input[type="checkbox"]:checked + label::after {
     transform: rotate(-55deg);
 }
 
-.nombre{
+.nombre {
     display: flex;
     /* justify-content: center; */
     align-items: center;
     gap: 30px;
     /* justify-content: center; */
-    
+
 }
 
-.label1{
+.label1, legend {
 
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
 }
+legend{
+    text-decoration: none;
+    width:250px;
+    background-color:rgb(237, 168, 168);
+    padding: 10px;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
-.opcion, .opcion2{
+
+.opcion,
+.opcion2 {
     font-family: monospace;
     color: rgb(237, 168, 168);
     text-shadow: 3px 3px 3px black;
     margin-left: 10px;
-    
+
 }
 
-.opcion{
+.opcion {
     position: relative;
     bottom: -12px;
 }
 
-select{
+select {
     padding: 10px;
     appearance: none;
     font-family: monospace;
 }
 
-input, textarea{
+input,
+textarea {
     font-family: monospace;
     padding: 10px;
     width: 96%;
 }
 
-input[type="time"]{
+input[type="time"] {
     width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-button{
+button {
+    font-size: 20px;
     padding: 15px;
-    width: 50%;
+    width: 55%;
     /* border-radius: 5px; */
-    
+
+
 }
-.enviar{
+
+.enviar {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
+
 }
-.radio-container
-{
+
+.radio-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-input[type="radio"]{
+
+input[type="radio"] {
     width: 15px;
-    
+
 }
 
-p{
+p {
     font-family: monospace;
     color: white;
     font-size: 50px;
     text-align: center;
-    background-color: rgba(184, 184, 184, 0.705) ;
+    background-color: rgba(184, 184, 184, 0.705);
     padding: 40px;
     text-shadow: 3px 3px 3px black;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
